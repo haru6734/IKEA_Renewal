@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IKEA</title>
+
+
+    <!-- font -->
+    <link rel="stylesheet" href="css/font.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <div id="wrap">
+
+        <header id="header">
+
+            <div class="inner">
+                <div class="header_menu">
+                    <h1>
+                        <a href="#">
+                            <img src="images/Logo.jpg" alt="IKEA">
+                        </a>
+                    </h1>
+                    <div class="search">
+                        <form>
+                            <fieldset>
+                                <legend>검색영역</legend>
+                                <div class="search_area">
+                                    <input type="search" placeholder="무엇을 찾으시나요?">
+                                    <input type="submit" value="검색">
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                    <div class="private">
+                        <a href="#">배송현황</a>
+                        <a href="#">로그인</a>
+                        <a href="#">장바구니</a>
+                    </div>
+                </div><!-- header_menu -->
+                <nav>
+                    <ul class="gnb">
+                        <li>
+                            <a href="#">Our Products</a>
+                            <ul class="depth2">
+                                <li>
+                                    <a href="#">신제품</a>
+                                </li>
+                                <li>
+                                    <a href="#">베스트셀러</a>
+                                </li>
+                                <li>
+                                    <a href="#">오픈세일</a>
+                                </li>
+                                <li>
+                                    <a href="#">테마별 제품 보기</a>
+                                </li>
+                                <li>
+                                    <a href="#">지속가능한 제품 보기</a>
+                                </li>
+                            </ul><!-- depth2 -->
+                        </li>
+                        <li>
+                            <a href="#">Shopping</a>
+                            <ul class="depth2">
+                                <li>
+                                    <a href="#">침실</a>
+                                </li>
+                                <li>
+                                    <a href="#">거실</a>
+                                </li>
+                                <li>
+                                    <a href="#">주방</a>
+                                </li>
+                                <li>
+                                    <a href="#">어린이 IKEA</a>
+                                </li>
+                                <li>
+                                    <a href="#">홈오피스</a>
+                                </li>
+                                <li>
+                                    <a href="#">다이닝</a>
+                                </li>
+                                <li>
+                                    <a href="#">욕실</a>
+                                </li>
+                                <li>
+                                    <a href="#">현관</a>
+                                </li>
+                                <li>
+                                    <a href="#">세탁실</a>
+                                </li>
+                                <li>
+                                    <a href="#">베란다/야외공간</a>
+                                </li>
+                            </ul><!-- depth2 -->
+                        </li>
+                        <li>
+                            <a href="#">Special prices</a>
+                            <ul class="depth2">
+                                <li>
+                                    <a href="#">작지만 큰 행복!</a>
+                                </li>
+                                <li>
+                                    <a href="#">IKEA Family 특별가</a>
+                                </li>
+                                <li>
+                                    <a href="#">더(THE) 세일!</a>
+                                </li>
+                                <li>
+                                    <a href="#">최저가 제품 보기</a>
+                                </li>
+                                <li>
+                                    <a href="#">리퍼브 제품 특가</a>
+                                </li>
+                            </ul><!-- depth2 -->
+                        </li>
+                        <li>
+                            <a href="#">Storage Ideas</a>
+                            <ul class="depth2">
+                                <li>
+                                    <a href="#">더 나은 일상을 위한 수납 아이디어</a>
+                                </li>
+                                <li>
+                                    <a href="#">어떤 상자가 필요하세요?</a>
+                                </li>
+                            </ul><!-- depth2 -->
+                        </li>
+                        <li>
+                            <a href="#">Ideas</a>
+                            <ul class="depth2">
+                                <li>
+                                    <a href="#">주제별 홈퍼니싱 아이디어</a>
+                                </li>
+                                <li>
+                                    <a href="#">공간별 홈퍼니싱 아이디어</a>
+                                </li>
+                                <li>
+                                    <a href="#">센스있는 선물 아이디어</a>
+                                </li>
+                                <li>
+                                    <a href="#">글로벌 집들이</a>
+                                </li>
+                                <li>
+                                    <a href="#">이웃집 집들이</a>
+                                </li>
+                            </ul><!-- depth2 -->
+                        </li>
+                        <li>
+                            <a href="#">Self planning</a>
+                            <ul class="depth2">
+                                <li>
+                                    <a href="#">AI 홈퍼니싱의 시작, IKEA Kreativ</a>
+                                </li>
+                                <li>
+                                    <a href="#">수납가구 플래너</a>
+                                </li>
+                                <li>
+                                    <a href="#">주방 플래너</a>
+                                </li>
+                                <li>
+                                    <a href="#">소파 플래너</a>
+                                </li>
+                                <li>
+                                    <a href="#">홈오피스 플래너</a>
+                                </li>
+                                <li>
+                                    <a href="#">매트리스/침구 플래너
+                                    </a>
+                                </li>
+                            </ul><!-- depth2 -->
+                        </li>
+                    </ul><!-- gnb -->
+                </nav>
+            </div><!-- inner -->
+
+        </header>
+
+        <main id="main">
+
+            <section id="main_visual">
+                <div class="inner">
+
+                    <div class="swiper mv_txt_list">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide">
+                                <a href="#">
+                                    <dl>
+                                        <dt>매주 목요일 오후 2시, IKEA Live!</dt>
+                                        <dd>
+                                            매주 다른 주제의 IKEA Live를 통해
+                                            다양한 홈퍼니싱 아이디어를 알아보고
+                                            마음에 드는 제품을 쇼핑하세요.
+                                            라이브 중 공개되는 🎁스페셜 할인 쿠폰🎁의 <br>
+                                            기회도 놓치지 마세요!
+                                        </dd>
+                                    </dl>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#">
+                                    <dl>
+                                        <dt>IKEA가 "더현대 서울"로 찾아왔어요!</dt>
+                                        <dd>
+                                            IKEA의 새롭고 특별한 가격의
+                                            홈퍼니싱 제품들을 IKEA 팝업 스토어
+                                            더현대 서울에서 만나보세요.
+                                        </dd>
+                                    </dl>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#">
+                                    <dl>
+                                        <dt>오랫동안 꽃피울 디자인, <br>
+                                            Nytillverkad 뉘틸베르카드 컬렉션!</dt>
+                                        <dd>
+                                            IKEA의 역사 속 인기 디자인을 새롭게 해석한
+                                            컬렉션이 더 밝아진 텍스타일과 훨씬 쿠션감이
+                                            좋아진 <br>암체어와 함께 돌아왔습니다!
+                                        </dd>
+                                    </dl>
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#">
+                                    <dl>
+                                        <dt>클릭 앤 콜렉트 주유소 픽업 서비스</dt>
+                                        <dd>
+                                            많은 분들이 기대하시던 클릭 앤 콜렉트 서비스! <br>
+                                            이제 IKEA 매장이 멀리 있어도, <br>
+                                            가까운 픽업 포인트에서 빠르고 편하게 <br>
+                                            직접 픽업할 수 있어요!
+                                        </dd>
+                                    </dl>
+                                </a>
+                            </li>
+                        </ul><!-- swiper-wrapper -->
+                    </div><!-- swiper mv_txt_list -->
+                    <div class="swiper mv_img_list">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide">
+                                <a href="#">
+                                    <img src="images/main_visual01.png" alt="IKEA Live">
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#">
+                                    <img src="images/main_visual02.png" alt="더현대 서울">
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#">
+                                    <img src="images/main_visual03.png" alt="뉘틸베르카드 컬렉션">
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#">
+                                    <img src="images/main_visual04.png" alt="클릭앤콜렉트">
+                                </a>
+                            </li>
+                        </ul><!-- swiper-wrapper -->
+                    </div><!-- swiper mv_img_list -->
+
+                </div><!-- inner -->
+            </section><!-- main_visual -->
+
+            <section id="promotion">
+                <div class="inner">
+                    <h2>프로모션 & 이벤트</h2>
+                    <div class="promo_main">
+                        <div class="promo_left">
+                            <div class="promo_up">
+                                <div class="p_u_img">
+                                    <a href="#">
+                                        <img src="images/promotion01.png" alt="더현대 서울">
+                                    </a>
+                                </div><!-- p_u_img -->
+                                <dl class="p_u_txt">
+                                    <dt>지구의 달, <br>
+                                        지속가능한 삶 함께하기</dt>
+                                    <dd>
+                                        4월 22일이 ‘지구의 날’이라는 사실 알고 계신가요? IKEA는 4월 한 달을 '지구의 달'로 지정하여, 지속가능한 제품 할인 혜택과 기후
+                                        발자국을
+                                        줄일 수
+                                        있는 다양한 이벤트와 혜택을 확인해보세요.
+                                    </dd>
+                                    <dd>
+                                        <a href="#">
+                                            <img src="images/arrow.png" alt="">
+                                        </a>
+                                    </dd>
+                                </dl><!-- p_u_txt -->
+                            </div><!-- promo_up -->
+                            <div class="promo_down">
+                                <dl class="p_d_txt">
+                                    <dt>매력적인 ​카페 가구 20% 할인</dt>
+                                    <dd>
+                                        가도 또 가고 싶은 매력적인 카페 공간을 만들고 싶다면? 감각적이면서도 편안한 가구가 필요하겠죠. 눈길을 사로잡는 카페 인테리어를 완성하기
+                                        위해, 카페
+                                        가구
+                                        20% 할인 혜택을 준비했어요.
+                                    </dd>
+                                    <dd>
+                                        <a href="#">
+                                            <img src="images/arrow.png" alt="">
+                                        </a>
+                                    </dd>
+                                </dl><!-- p_d_txt -->
+                                <div class="p_d_img">
+                                    <a href="#">
+                                        <img src="images/promotion02.png" alt="카페 모습">
+                                    </a>
+                                </div><!-- p_d_img -->
+                            </div><!-- promo_down -->
+                        </div><!-- promo_left -->
+                        <div class="promo_right">
+                            <a href="#">
+                                <img src="images/promotion03.png" alt="지구">
+                            </a>
+                        </div><!-- promo_right -->
+                    </div><!-- promo_main -->
+                </div><!-- inner -->
+            </section><!-- promotion -->
+
+            <section id="collection">
+                <div class="inner">
+                    <h2>IKEA 컬렉션</h2>
+                    <div class="col">
+                        <div class="col1">
+                            <div class="col_img">
+                                <img src="images/collection01.png" alt="테삼만스 컬렉션">
+                            </div>
+                            <div class="col1_txt">
+                                <dl>
+                                    <dt>컬러로 물드는 일상,
+                                        TESAMMANS 테삼만스 컬렉션을
+                                        만나보세요!</dt>
+                                    <dd>
+                                        <p>
+                                            디자이너 듀오 로 컬러(Raw Color)와의 협업을 통해 탄생한 TESAMMANS 테삼만스 컬렉션을 만나보세요.
+                                        </p>
+                                        <p>
+                                            기발한 컬러 조합과 그래픽 모양이 돋보이는 가구, 텍스타일, 식기, 장식용품을 하나의 컬렉션에 담았습니다.
+                                        </p>
+                                        <p>
+                                            약간의 컬러를 더했을 때 공간의 분위기 그리고 사람의 기분까지 순식간에 얼마나 달라지는지 경험해 보세요.
+                                        </p>
+                                    </dd>
+                                    <dd>
+                                        <a href="#">
+                                            <img src="images/arrow.png" alt="">
+                                        </a>
+                                    </dd>
+                                </dl>
+                            </div><!-- col1_txt -->
+                        </div><!-- col1 -->
+
+                        <div class="col2">
+                            <div class="col_img">
+                                <img src="images/collection02.png" alt="브뢰간 컬렉션">
+                            </div>
+                            <div class="col2_txt">
+                                <dl>
+                                    <dt>신나는 여름엔, <br>
+                                        BRÖGGAN 브뢰간 컬렉션!</dt>
+                                    <dd>
+                                        <p>
+                                            레트로 느낌이 물씬 나는 유쾌한 컬러와 패턴의 BRÖGGAN 브뢰간 컬렉션은 한여름의 모임에 활기를 더해 줍니다.
+                                        </p>
+                                        <p>
+                                            멋스러우면서도 실용적인 이 컬렉션에는 그릇, 고블렛, 유리병, 플로어쿠션, 해변 가방 등 실내와 야외에서 행복한 분위기를 내는 데 필요한
+                                            모든
+                                            것이 있습니다.
+                                        </p>
+                                        <p>
+                                            친구, 가족과 신나는 여름을 보내세요!
+                                        </p>
+                                    </dd>
+                                    <dd>
+                                        <a href="#">
+                                            <img src="images/arrow.png" alt="">
+                                        </a>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div><!-- col2 -->
+                    </div><!-- col -->
+                </div><!-- inner -->
+            </section><!-- collection -->
+
+            <section id="theme">
+                <div class="inner">
+                    <h2>IKEA 테마 둘러보기</h2>
+                    <div class="swiper theme">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide">
+                                <a href="#">
+                                    <dl>
+                                        <dt>
+                                            즐거운 서커스 테마
+                                        </dt>
+                                        <dd>
+                                            #휴식공간 #아이들 #놀이터
+                                        </dd>
+                                    </dl>
+                                    <img src="images/theme01.png" alt="즐거운 서커스 테마">
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#">
+                                    <dl>
+                                        <dt>
+                                            풍요로운 여름의 화려함
+                                        </dt>
+                                        <dd>
+                                            #2020 IKEA 여름 테마
+                                        </dd>
+                                    </dl>
+                                    <img src="images/theme02.jpg" alt="풍요로운 여름의 화려함">
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#">
+                                    <dl>
+                                        <dt>
+                                            가을맞이 인테리어
+                                        </dt>
+                                        <dd>
+                                            #거실 #무드 조명 #가을
+                                        </dd>
+                                    </dl>
+                                    <img src="images/theme03.jpg" alt="가을맞이 인테리어">
+                                </a>
+                            </li>
+
+                            <li class="swiper-slide">
+                                <a href="#">
+                                    <dl>
+                                        <dt>
+                                            즐거운 서커스 테마
+                                        </dt>
+                                        <dd>
+                                            #휴식공간 #아이들 #놀이터
+                                        </dd>
+                                    </dl>
+                                    <img src="images/theme01.png" alt="즐거운 서커스 테마">
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#">
+                                    <dl>
+                                        <dt>
+                                            풍요로운 여름의 화려함
+                                        </dt>
+                                        <dd>
+                                            #2020 IKEA 여름 테마
+                                        </dd>
+                                    </dl>
+                                    <img src="images/theme02.jpg" alt="풍요로운 여름의 화려함">
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#">
+                                    <dl>
+                                        <dt>
+                                            가을맞이 인테리어
+                                        </dt>
+                                        <dd>
+                                            #거실 #무드 조명 #가을
+                                        </dd>
+                                    </dl>
+                                    <img src="images/theme03.jpg" alt="가을맞이 인테리어">
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div><!-- swiper theme -->
+                </div><!-- inner -->
+            </section><!-- theme -->
+
+            <section id="sns">
+                <div class="inner">
+                    <h2>일상속의 #IKEA</h2>
+                    <div class="sns_main">
+                        <div class="sns_img">
+                            <img src="images/sns01.jpg" alt="인스타그램 사진">
+                            <div class="sns_icon">
+                            </div><!-- sns_icon -->
+                        </div>
+                        <div class="goods">
+                            <div class="goods01">
+                                <div class="goods_img">
+                                    <img src="images/sns_product01.jpg" alt="달스훌트 테이블">
+                                    <img src="images/sns_product01-1.jpg" alt="달스훌트 테이블">
+                                </div>
+                                <dl>
+                                    <dt>
+                                        <a href="#">
+                                            DALSHULT 달스훌트
+                                        </a>
+                                    </dt>
+                                    <dd>
+                                        테이블, 185x90 cm
+                                        <br>
+                                        ￦299,000
+                                    </dd>
+                                </dl>
+                                <div class="sns_menu">
+                                    <ul class="empty_heart">
+                                        <li>
+                                            <a href="#">
+                                                <img src="images/empty_heart.png" alt="찜">
+                                            </a>
+                                        </li>
+                                        <ul class="full_heart">
+                                            <li>
+                                                <a href="#">
+                                                    <img src="images/full_heart.png" alt="찜">
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </ul>
+                                    <br>
+                                    <a href="#">
+                                        <img src="images/add_bag.png" alt="장바구니에 추가">
+                                    </a>
+                                </div><!-- sns_menu -->
+                            </div><!-- goods01 -->
+                            <div class="goods02">
+                                <div class="goods_img">
+                                    <img src="images/sns_product02.jpg" alt="엘브스타 의자 사진">
+                                    <img src="images/sns_product02-1.jpg" alt="엘브스타 의자 사진">
+                                </div>
+                                <dl>
+                                    <dt>
+                                        <a href="#">ÄLVSTA 엘브스타</a>
+                                    </dt>
+                                    <dd>
+                                        의자
+                                        <br>
+                                        ￦99,900
+                                    </dd>
+                                </dl>
+                                <div class="sns_menu">
+                                    <ul class="empty_heart">
+                                        <li>
+                                            <a href="#">
+                                                <img src="images/empty_heart.png" alt="찜">
+                                            </a>
+                                        </li>
+                                        <ul class="full_heart">
+                                            <li>
+                                                <a href="#">
+                                                    <img src="images/full_heart.png" alt="찜">
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </ul>
+                                    <br>
+                                    <a href="#">
+                                        <img src="images/add_bag.png" alt="장바구니에 추가">
+                                    </a>
+                                </div><!-- sns_menu -->
+                            </div><!-- goods02 -->
+                            <div class="goods03">
+                                <div class="goods_img">
+                                    <img src="images/sns_product03.jpg" alt="미스테르훌트 펜던트등 사진">
+                                    <img src="images/sns_product03-1.jpg" alt="미스테르훌트 펜던트등 사진">
+                                </div>
+                                <dl>
+                                    <dt>
+                                        <a href="#">
+                                            MISTERHULT 미스테르훌트
+                                        </a>
+                                    </dt>
+                                    <dd>
+                                        펜던트등, 45 cm
+                                        <br>
+                                        ￦71,900
+                                    </dd>
+                                </dl>
+                                <div class="sns_menu">
+                                    <ul class="empty_heart">
+                                        <li>
+                                            <a href="#">
+                                                <img src="images/empty_heart.png" alt="찜">
+                                            </a>
+                                        </li>
+                                        <ul class="full_heart">
+                                            <li>
+                                                <a href="#">
+                                                    <img src="images/full_heart.png" alt="찜">
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </ul>
+                                    <br>
+                                    <a href="#">
+                                        <img src="images/add_bag.png" alt="장바구니에 추가">
+                                    </a>
+                                </div><!-- sns_menu -->
+                            </div><!-- goods03 -->
+                        </div><!-- goods -->
+                    </div><!-- sns_main -->
+                </div><!-- inner -->
+            </section><!-- sns -->
+
+            <section id="service">
+                <div class="inner">
+                    <h2>안내 및 서비스</h2>
+                    <div class="ser_main">
+                        <div class="mall">
+                            <div class="mall_txt">
+                                <h3>매장 선택</h3>
+                                <a href="#">
+                                    <img src="images/arrow.png" alt="">
+                                </a>
+                            </div>
+                            <div class="mall_img">
+                                <img src="images/service01.png" alt="매장 선택 사진">
+                            </div>
+                        </div>
+                        <div class="order">
+                            <div class="order_txt">
+                                <h3>헤이 오더</h3>
+                                <a href="#">
+                                    <img src="images/arrow.png" alt="">
+                                </a>
+                            </div>
+                            <div class="order_img">
+                                <img src="images/service02.png" alt="헤이 오더 사진">
+                            </div>
+                        </div>
+                        <div class="delivery">
+                            <div class="delivery_txt">
+                                <h3>배송 서비스</h3>
+                                <a href="#">
+                                    <img src="images/arrow.png" alt="">
+                                </a>
+                            </div>
+                            <div class="delivery_img">
+                                <img src="images/service03.png" alt="배송 서비스 사진">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section><!-- service -->
+
+        </main>
+
+        <footer id="footer">
+            <div class="inner">
+                <div class="footer_up_menu">
+                    <div class="footer_bis">
+                        <div class="family">
+                            <h3>IKEA Family</h3>
+                            <p>지금 IKEA Family에 무료로 가입하고
+                                <br> 다양한 멤버 전용 혜택을 누리세요.
+                            </p>
+                            <a href="#">
+                                자세히 보기
+                            </a>
+                            <a href="#">
+                                IKEA Family 가입하기
+                            </a>
+                        </div>
+                        <div class="network">
+                            <h3>IKEA Business Network</h3>
+                            <p>
+                                여러분의 더 나은 비즈니스 환경을 위한 <br>
+                                다양한 혜택들을 받으세요
+                            </p>
+                            <a href="#">
+                                자세히 보기
+                            </a>
+                            <a href="#">
+                                IKEA Business Network 가입하기
+                            </a>
+                        </div>
+                        <div class="footer_sns">
+                            <a href="#">
+                                <img src="images/facebook.png" alt="페이스북">
+                            </a>
+                            <a href="#">
+                                <img src="images/instagram.png" alt="인스타그램">
+                            </a>
+                            <a href="#">
+                                <img src="images/youtube.png" alt="유튜브">
+                            </a>
+                            <a href="#">
+                                <img src="images/kakaotalk.png" alt="카카오톡">
+                            </a>
+                        </div><!-- footer_sns -->
+                    </div><!-- footer_bis -->
+
+                    <div class="up_menu_txt">
+                        <div class="request">
+                            <h4>고객문의</h4>
+                            <a href="#">
+                                <p>고객 서비스</p>
+                            </a>
+                            <a href="#">
+                                <p>자주 묻는 질문</p>
+                            </a>
+                            <a href="#">
+                                <p>고객지원센터</p>
+                            </a>
+                            <a href="#">
+                                <p>배송조회</p>
+                            </a>
+                            <a href="#">
+                                <p>교환환불</p>
+                            </a>
+                            <a href="#">
+                                <p>품질보증</p>
+                            </a>
+                            <a href="#">
+                                <p>제품리콜</p>
+                            </a>
+                            <a href="#">
+                                <p>피드백</p>
+                            </a>
+                            <a href="#">
+                                <p>부품 신청</p>
+                            </a>
+                        </div><!-- request -->
+                        <div class="shopping">
+                            <h4>쇼핑하기</h4>
+                            <a href="#">
+                                <p>쇼핑하기</p>
+                            </a>
+                            <a href="#">
+                                <p>헤이오더</p>
+                            </a>
+                            <a href="#">
+                                <p>IKEA for Business</p>
+                            </a>
+                            <a href="#">
+                                <p>셀프 플래닝</p>
+                            </a>
+                            <a href="#">
+                                <p>IKEA 모바일 앱</p>
+                            </a>
+                            <a href="#">
+                                <p>제품 사용 팁 / 가이드</p>
+                            </a>
+                            <a href="#">
+                                <p>브로슈어 / 제품 구매 안내</p>
+                            </a>
+                            <a href="#">
+                                <p>결제 옵션</p>
+                            </a>
+                            <a href="#">
+                                <p>기프트 카드</p>
+                            </a>
+                        </div><!-- shopping -->
+                        <div class="service">
+                            <h4>서비스</h4>
+                            <a href="#">
+                                <p>IKEA 서비스</p>
+                            </a>
+                            <a href="#">
+                                <p>배송 서비스</p>
+                            </a>
+                            <a href="#">
+                                <p>조립 서비스</p>
+                            </a>
+                            <a href="#">
+                                <p>설치 서비스</p>
+                            </a>
+                            <a href="#">
+                                <p>주방 서비스</p>
+                            </a>
+                            <a href="#">
+                                <p>구매 상담 서비스</p>
+                            </a>
+                            <a href="#">
+                                <p>인테리어 디자인 서비스</p>
+                            </a>
+                            <a href="#">
+                                <p>바이백 서비스</p>
+                            </a>
+                        </div><!-- service -->
+                        <div class="story">
+                            <h4>IKEA 이야기</h4>
+                            <a href="#">
+                                <p>브랜드 소개</p>
+                            </a>
+                            <a href="#">
+                                <p>집에서의 생활</p>
+                            </a>
+                            <a href="#">
+                                <p>지속가능한 생활</p>
+                            </a>
+                            <a href="#">
+                                <p>뉴스룸</p>
+                            </a>
+                            <a href="#">
+                                <p>채용정보</p>
+                            </a>
+                        </div><!-- story -->
+                    </div><!-- menu_txt -->
+
+                </div><!-- footer_up_menu -->
+                <div class="footer_under_menu">
+                    <div class="footer_txt">
+                        <div class="copy">
+                            © Inter IKEA Systems B.V 1999-2024
+                        </div><!-- copy -->
+                        <address>
+                            Responsible disclosure
+                            <br>
+                            IKEA 코리아
+                            <br>
+                            주소: (우) 14352 경기도 광명시 일직로 <br>
+                            17 IKEA광명점
+                            <br>
+                            사업자 등록번호: 106-86-82871
+                            <br>
+                            사업자정보확인
+                            <br>
+                            대표자: 이사벨 푸치 팔렘
+                            <br>
+                            통신판매업 신고: 2018-경기광명-0209
+                            <br>
+                            고객지원센터: 1670-4532
+                        </address>
+                    </div><!-- footer_txt -->
+                    <ul class="cookie">
+                        <li>
+                            <a href="#">개인정보처리방침</a>
+                        </li>
+                        <li>
+                            <a href="#">쿠키 정책</a>
+                        </li>
+                        <li>
+                            <a href="#">쿠키 설정</a>
+                        </li>
+                        <li>
+                            <a href="#">웹사이트 이용약관</a>
+                        </li>
+                    </ul><!-- cookie -->
+                </div><!-- footer_under_menu -->
+            </div><!-- inner -->
+        </footer>
+        <div class="sidemap">
+            <div class="sidemap_bg">
+                <div class="heart">
+                    <a href="#">
+                        <img src="images/side_heart.png" alt="찜">
+                        <p>찜 목록</p>
+                    </a>
+                </div>
+                <div class="private">
+                    <a href="#">
+                        <img src="images/ion_person-outline.png" alt="로그인">
+                        <p>로그인</p>
+                    </a>
+                </div>
+                <div class="bag">
+                    <a href="#">
+                        <img src="images/bag.png" alt="장바구니">
+                        <p>장바구니</p>
+                    </a>
+                </div>
+                <div class="gotop">
+                    <a href="#">
+                        <img src="images/gotop.png" alt="맨 위로 가기">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
